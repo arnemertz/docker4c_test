@@ -11,8 +11,8 @@ if(ENABLE_CPPCHECK)
         --enable=all
         --inline-suppr
         --inconclusive
-        -i
-        ${CMAKE_SOURCE_DIR}/imgui/lib)
+        --error-exitcode=2
+       )
   else()
     message(SEND_ERROR "cppcheck requested but executable not found")
   endif()
