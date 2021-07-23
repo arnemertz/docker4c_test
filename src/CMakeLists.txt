@@ -1,4 +1,7 @@
 # Generic test that uses conan libs
+
+add_subdirectory(hello)
+
 add_executable(intro main.cpp)
 target_link_libraries(
   intro
@@ -6,4 +9,5 @@ target_link_libraries(
           project_warnings
           CONAN_PKG::docopt.cpp
           CONAN_PKG::fmt
-          CONAN_PKG::spdlog)
+          CONAN_PKG::spdlog
+          hello_lib)

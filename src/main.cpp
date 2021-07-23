@@ -8,6 +8,8 @@
 #include <spdlog/spdlog.h>
 #include <docopt/docopt.h>
 
+#include "hello.hpp"
+
 static constexpr auto USAGE =
   R"(Naval Fate.
 
@@ -37,6 +39,7 @@ int main(int argc, const char **argv)
     std::cout << arg.first << arg.second << std::endl;
   }
 
+  hello("lib");
 
   //Use the default logger (stdout, multi-threaded, colored)
   spdlog::info("Hello, {}!", "World");
