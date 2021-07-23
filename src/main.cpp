@@ -1,4 +1,8 @@
-#include <functional>
+#include <exception>          // for exception
+#include <iterator>           // for next
+#include <map>                // for map, operator!=, _Rb_tree_iterator, _Rb...
+#include <fmt/core.h>         // for print
+#include <fmt/format.h>       // for format_to
 #include <iostream>
 
 #include <spdlog/spdlog.h>
