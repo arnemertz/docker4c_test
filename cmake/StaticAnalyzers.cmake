@@ -8,6 +8,8 @@ if(ENABLE_CPPCHECK)
     set(CMAKE_CXX_CPPCHECK
         ${CPPCHECK}
         --suppress=missingInclude
+        --suppress=unusedFunction
+        --suppress=unmatchedSuppression
         --enable=all
         --inline-suppr
         --inconclusive
